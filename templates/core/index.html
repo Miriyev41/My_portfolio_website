@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirparvin Miriyev | Cloud Engineer</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Inter', sans-serif;
+            background: #0f172a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .gradient-text{
+            background: linear-gradient(to right,#38bdf8,#06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass{
+            background: rgba(255,255,255,0.04);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Background -->
+<div class="fixed inset-0 -z-10 overflow-hidden">
+
+    <div class="absolute top-[-200px] left-[-100px] w-[400px] h-[400px] bg-cyan-500 opacity-10 blur-[120px] rounded-full"></div>
+
+    <div class="absolute bottom-[-200px] right-[-100px] w-[400px] h-[400px] bg-blue-500 opacity-10 blur-[120px] rounded-full"></div>
+
+</div>
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-[#07111f]/70 border-b border-white/5">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="flex items-center justify-between h-20">
+
+            <!-- LOGO -->
+            <a href="#" class="text-2xl font-black tracking-tight">
+
+                Portfolio 
+                <span class="text-cyan-400">
+                    
+                </span>
+
+            </a>
+
+            <!-- DESKTOP MENU -->
+            <div class="hidden md:flex items-center gap-8 text-sm">
+
+                <a href="#about" class="text-gray-300 hover:text-cyan-400 transition duration-300">
+                    About
+                </a>
+
+                <a href="#skills" class="text-gray-300 hover:text-cyan-400 transition duration-300">
+                    Skills
+                </a>
+
+                <a href="#projects" class="text-gray-300 hover:text-cyan-400 transition duration-300">
+                    Projects
+                </a>
+
+                <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition duration-300">
+                    Contact
+                </a>
+
+            </div>
+
+            <!-- DESKTOP BUTTON -->
+            <a
+                href="#contact"
+                class="hidden md:flex px-5 py-2 bg-cyan-400 text-black rounded-xl text-sm font-semibold hover:scale-[1.03] transition duration-300"
+            >
+                Let's Talk
+            </a>
+
+            <!-- MOBILE BUTTON -->
+            <button
+                id="menu-btn"
+                class="md:hidden text-2xl text-white"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div
+        id="mobile-menu"
+        class="hidden md:hidden border-t border-white/5 bg-[#07111f]/95 backdrop-blur-xl"
+    >
+
+        <div class="flex flex-col px-6 py-6 gap-5 text-sm">
+
+            <a href="#about" class="text-gray-300 hover:text-cyan-400 transition duration-300">
+                About
+            </a>
+
+            <a href="#skills" class="text-gray-300 hover:text-cyan-400 transition duration-300">
+                Skills
+            </a>
+
+            <a href="#projects" class="text-gray-300 hover:text-cyan-400 transition duration-300">
+                Projects
+            </a>
+
+            <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition duration-300">
+                Contact
+            </a>
+
+            <a
+                href="#contact"
+                class="mt-2 px-5 py-3 bg-cyan-400 text-black rounded-xl text-sm font-semibold text-center"
+            >
+                Let's Talk
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- HERO -->
+<section
+    class="relative px-6 pt-28 pb-20 overflow-hidden"
+    data-aos="fade-up"
+>
+
+    <!-- BACKGROUND GLOW -->
+    <div class="absolute top-[-120px] left-[-120px] w-[300px] h-[300px] bg-cyan-500/20 blur-[120px] rounded-full"></div>
+
+    <div class="absolute bottom-[-120px] right-[-120px] w-[300px] h-[300px] bg-blue-500/10 blur-[120px] rounded-full"></div>
+
+    <div class="max-w-6xl mx-auto relative z-10">
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+            <!-- LEFT SIDE -->
+            <div>
+
+                <!-- AVAILABILITY -->
+                <div class="inline-flex items-center gap-2 bg-cyan-400/10 border border-cyan-400/20 rounded-full px-4 py-2 mb-7">
+
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+
+                    <span class="text-cyan-300 text-sm">
+                        Available for Opportunities
+                    </span>
+
+                </div>
+
+                <!-- TITLE -->
+                <h1 class="text-5xl lg:text-6xl font-black leading-tight mb-6">
+
+                    Mirparvin
+                    <span class="text-cyan-400">
+                        Miriyev
+                    </span>
+
+                </h1>
+
+                <!-- SUBTITLE -->
+                <h2 class="text-2xl lg:text-3xl font-semibold text-gray-200 mb-6">
+
+                    Cloud Engineer
+
+                </h2>
+
+                <!-- DESCRIPTION -->
+                <p class="text-gray-400 leading-loose text-[15px] max-w-xl mb-8">
+
+                    Building scalable cloud infrastructure,
+                    automating deployments, and developing
+                    reliable backend systems using AWS,
+                    Terraform, Docker, Python, and Django.
+
+                </p>
+
+                <!-- TECH BADGES -->
+                <div class="flex flex-wrap gap-3 mb-10">
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300">
+                        AWS
+                    </span>
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300">
+                        Terraform
+                    </span>
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300">
+                        Docker
+                    </span>
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300">
+                        Python
+                    </span>
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300">
+                        Django
+                    </span>
+
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="flex flex-wrap gap-4">
+
+                    <!-- DOWNLOAD CV -->
+                    <a
+                        href="/static/files/Mirparvin_Miriyev.pdf"
+                        download
+                        class="px-7 py-3 bg-cyan-400 text-black rounded-2xl font-semibold hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(34,211,238,0.35)] transition duration-300"
+                    >
+                        Download CV
+                    </a>
+
+                    <!-- CONTACT -->
+                    <a
+                        href="#contact"
+                        class="px-7 py-3 border border-white/10 rounded-2xl text-white hover:border-cyan-400 hover:text-cyan-400 transition duration-300"
+                    >
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="relative flex justify-center lg:justify-end">
+
+                <!-- GLOW -->
+                <div class="absolute w-[320px] h-[320px] bg-cyan-400/20 blur-[100px] rounded-full"></div>
+
+                <!-- IMAGE CARD -->
+                <div class="relative glass rounded-[32px] p-5 border border-white/10">
+
+                    <div class="absolute inset-0 rounded-[32px] bg-gradient-to-br from-cyan-400/10 to-transparent pointer-events-none"></div>
+
+                    <img
+                        src="/static/files/profil.jpg"
+                        alt="Mirparvin Miriyev"
+                        class="relative z-10 w-[280px] lg:w-[320px] rounded-[24px] object-cover"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<!-- ABOUT -->
+<!-- ABOUT -->
+<!-- ABOUT -->
+<section
+    id="about"
+    class="px-6 py-14"
+    data-aos="fade-up"
+>
+
+    <div class="max-w-6xl mx-auto">
+
+        <!-- TITLE -->
+        <div class="mb-10">
+
+            <h2 class="text-3xl font-black mb-3">
+                About Me
+            </h2>
+
+            <p class="text-gray-400 text-sm">
+                Cloud & DevOps Engineer focused on scalable infrastructure and backend systems.
+            </p>
+
+        </div>
+
+        <!-- GRID -->
+        <div class="grid lg:grid-cols-3 gap-6 items-stretch">
+
+            <!-- LEFT SIDE -->
+            <div class="lg:col-span-2 glass rounded-[28px] p-8 flex flex-col justify-between">
+
+                <div>
+
+                    <!-- PROFILE -->
+                    <div class="flex items-center gap-4 mb-8">
+
+                        <div class="w-16 h-16 rounded-2xl overflow-hidden border border-cyan-400/20">
+
+                            <img
+                                src="/static/files/profil.jpg"
+                                alt="profile"
+                                class="w-full h-full object-cover"
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <h3 class="text-2xl font-bold">
+                                Mirparvin Miriyev
+                            </h3>
+
+                            <p class="text-gray-400 text-sm mt-1">
+                                Cloud & Project Engineer
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- DESCRIPTION -->
+                    <p class="text-gray-300 leading-loose text-[15px]">
+
+                        After four years of managing technical engineering projects,
+                        I am now expanding my professional foundation through a
+                        Master’s degree in Computer Science in Poland.
+
+                        My focus is adapting to the modern technological era by
+                        combining my engineering background with cloud infrastructure,
+                         backend development, and scalable systems.
+
+                        I specialize in AWS, Terraform, Docker, Python, Django,
+                        Linux environments, and CI/CD pipelines to build reliable
+                        and efficient solutions for real-world challenges.
+
+                    </p>
+
+                </div>
+
+                <!-- STATS -->
+                <div class="grid grid-cols-3 gap-4 mt-10">
+
+                    <!-- CERTIFICATIONS -->
+                    <div class="bg-white/5 rounded-2xl p-5 text-center border border-white/5">
+
+                        <h4 class="text-2xl font-black text-cyan-400">
+                            2+
+                        </h4>
+
+                        <p class="text-gray-400 text-sm mt-2">
+                            AWS Certifications
+                        </p>
+
+                    </div>
+
+                    <!-- TECHNOLOGIES -->
+                    <div class="bg-white/5 rounded-2xl p-5 text-center border border-white/5">
+
+                        <h4 class="text-2xl font-black text-cyan-400">
+                            10+
+                        </h4>
+
+                        <p class="text-gray-400 text-sm mt-2">
+                            Technologies
+                        </p>
+
+                    </div>
+
+                    <!-- FOCUS -->
+                    <div class="bg-white/5 rounded-2xl p-5 text-center border border-white/5">
+
+                        <h4 class="text-2xl font-black text-cyan-400">
+                            DevOps
+                        </h4>
+
+                        <p class="text-gray-400 text-sm mt-2">
+                            Cloud Focused
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <!-- RIGHT SIDE -->
+            <div class="flex flex-col gap-6 h-full">
+
+                <!-- EDUCATION -->
+                <div class="glass rounded-[28px] p-7">
+
+                    <div class="flex items-center gap-3 mb-6">
+
+                        <div class="w-11 h-11 rounded-2xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 text-base">
+
+                            <i class="fa-solid fa-graduation-cap"></i>
+
+                        </div>
+
+                        <h3 class="text-xl font-bold">
+                            Education
+                        </h3>
+
+                    </div>
+
+                    <div class="border border-white/10 rounded-2xl p-5">
+
+                        <p class="text-sm text-gray-400 mb-2">
+                            Computer Science
+                        </p>
+
+                        <h4 class="font-semibold leading-relaxed">
+                            Master’s Degree
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- CERTIFICATIONS -->
+                <div class="glass rounded-[28px] p-7 flex-1">
+
+                    <div class="flex items-center gap-3 mb-6">
+
+                        <div class="w-11 h-11 rounded-2xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 text-base">
+
+                            <i class="fa-solid fa-award"></i>
+
+                        </div>
+
+                        <h3 class="text-xl font-bold">
+                            Certifications
+                        </h3>
+
+                    </div>
+
+                    <!-- CERT 1 -->
+                    <div class="border border-white/10 rounded-2xl p-5 mb-4">
+
+                        <p class="text-sm text-gray-400 mb-2">
+                            Amazon Web Services
+                        </p>
+
+                        <h4 class="font-semibold leading-relaxed">
+                            AWS Certified Solutions Architect
+                        </h4>
+
+                    </div>
+
+                    <!-- CERT 2 -->
+                    <div class="border border-white/10 rounded-2xl p-5">
+
+                        <p class="text-sm text-gray-400 mb-2">
+                            Amazon Web Services
+                        </p>
+
+                        <h4 class="font-semibold leading-relaxed">
+                            AWS Certified Cloud Practitioner
+                        </h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TECH STACK -->
+<!-- TECH STACK -->
+<section
+    id="skills"
+    class="px-6 py-14"
+    data-aos="fade-up"
+>
+
+    <div class="max-w-6xl mx-auto">
+
+        <!-- TITLE -->
+        <div class="mb-10">
+
+            <h2 class="text-3xl font-black mb-3">
+                Tech Stack
+            </h2>
+
+            <p class="text-gray-400 text-sm">
+                Technologies I use for cloud infrastructure and backend development.
+            </p>
+
+        </div>
+
+        <!-- GRID -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+
+            <!-- AWS -->
+            <div class="glass rounded-[22px] p-6 hover:-translate-y-1 transition duration-300">
+
+                <div class="text-4xl mb-4 text-orange-400">
+                    <i class="fa-brands fa-aws"></i>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2">
+                    AWS
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    Cloud Infrastructure
+                </p>
+
+            </div>
+
+            <!-- Docker -->
+            <div class="glass rounded-[22px] p-6 hover:-translate-y-1 transition duration-300">
+
+                <div class="text-4xl mb-4 text-blue-400">
+                    <i class="fa-brands fa-docker"></i>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2">
+                    Docker
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    Containerization
+                </p>
+
+            </div>
+
+            <!-- Terraform -->
+            <div class="glass rounded-[22px] p-6 hover:-translate-y-1 transition duration-300">
+
+                <div class="text-4xl mb-4 text-purple-400">
+                    <i class="fa-solid fa-cubes"></i>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2">
+                    Terraform
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    Infrastructure as Code
+                </p>
+
+            </div>
+
+            <!-- Python -->
+            <div class="glass rounded-[22px] p-6 hover:-translate-y-1 transition duration-300">
+
+                <div class="text-4xl mb-4 text-yellow-400">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2">
+                    Python
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    Automation & Backend
+                </p>
+
+            </div>
+
+            <!-- Django -->
+            <div class="glass rounded-[22px] p-6 hover:-translate-y-1 transition duration-300">
+
+                <div class="text-4xl mb-4 text-green-400">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2">
+                    Django
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    Backend Development
+                </p>
+
+            </div>
+
+            <!-- Linux -->
+            <div class="glass rounded-[22px] p-6 hover:-translate-y-1 transition duration-300">
+
+                <div class="text-4xl mb-4 text-yellow-300">
+                    <i class="fa-brands fa-linux"></i>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2">
+                    Linux
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    Server Administration
+                </p>
+
+            </div>
+
+            <!-- Git -->
+            <div class="glass rounded-[22px] p-6 hover:-translate-y-1 transition duration-300">
+
+                <div class="text-4xl mb-4 text-orange-500">
+                    <i class="fa-brands fa-git-alt"></i>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2">
+                    Git
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    Version Control
+                </p>
+
+            </div>
+
+            <!-- CI/CD -->
+            <div class="glass rounded-[22px] p-6 hover:-translate-y-1 transition duration-300">
+
+                <div class="text-4xl mb-4 text-cyan-400">
+                    <i class="fa-solid fa-rotate"></i>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2">
+                    CI/CD
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    Deployment Automation
+                </p>
+
+            </div>
+
+            <!-- Networking -->
+            <div class="glass rounded-[22px] p-6 hover:-translate-y-1 transition duration-300">
+
+                <div class="text-4xl mb-4 text-pink-400">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2">
+                    Networking
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    Protocols & Security
+                </p>
+
+            </div>
+
+            <!-- PostgreSQL -->
+            <div class="glass rounded-[22px] p-6 hover:-translate-y-1 transition duration-300">
+
+                <div class="text-4xl mb-4 text-sky-400">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2">
+                    PostgreSQL
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    Database Management
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section
+    id="projects"
+    class="px-6 py-14"
+    data-aos="fade-up"
+>
+
+    <div class="max-w-6xl mx-auto">
+
+        <!-- TITLE -->
+        <div class="mb-10">
+
+            <h2 class="text-3xl font-black mb-3">
+                Projects
+            </h2>
+
+            <p class="text-gray-400 text-sm">
+                Some infrastructure and backend projects I worked on.
+            </p>
+
+        </div>
+
+        <!-- GRID -->
+        <div class="grid lg:grid-cols-3 gap-6">
+
+            {% for project in projects %}
+
+            <div
+                class="glass rounded-[24px] overflow-hidden hover:-translate-y-1 transition duration-300"
+                data-aos="zoom-in"
+            >
+
+                <!-- IMAGE -->
+                <img
+                    src="{{ project.image.url }}"
+                    class="w-full h-[180px] object-cover"
+                    alt="{{ project.title }}"
+                >
+
+                <!-- CONTENT -->
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold mb-3">
+                        {{ project.title }}
+                    </h3>
+
+                    <p class="text-gray-400 text-sm leading-relaxed mb-5">
+                        {{ project.description }}
+                    </p>
+
+                    <!-- TECHNOLOGIES -->
+                    <div class="mb-6">
+
+                        <span class="bg-cyan-400/10 text-cyan-400 text-xs px-3 py-1 rounded-full">
+                            {{ project.technologies }}
+                        </span>
+
+                    </div>
+
+                    <!-- BUTTONS -->
+                    <div class="flex gap-3">
+
+                        <!-- GITHUB -->
+                        {% if project.github_link %}
+
+                        <a
+                            href="{{ project.github_link }}"
+                            target="_blank"
+                            class="px-4 py-2 bg-cyan-400 text-black text-sm rounded-lg font-semibold hover:opacity-90 transition duration-300"
+                        >
+                            GitHub
+                        </a>
+
+                        {% else %}
+
+                        <button
+                            class="px-4 py-2 bg-gray-700 text-gray-400 text-sm rounded-lg cursor-not-allowed"
+                        >
+                            GitHub
+                        </button>
+
+                        {% endif %}
+
+                        <!-- LIVE DEMO -->
+                        {% if project.live_demo %}
+
+                        <a
+                            href="{{ project.live_demo }}"
+                            target="_blank"
+                            class="px-4 py-2 bg-cyan-400 text-black text-sm rounded-lg font-semibold hover:opacity-90 transition duration-300"
+                        >
+                            Live
+                        </a>
+
+                        {% else %}
+
+                        <button
+                            class="px-4 py-2 border border-gray-600 text-gray-500 text-sm rounded-lg cursor-not-allowed"
+                        >
+                            Live
+                        </button>
+
+                        {% endif %}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<!-- CONTACT -->
+<!-- CONTACT -->
+<!-- CONTACT -->
+<section
+    id="contact"
+    class="px-6 py-14"
+    data-aos="fade-up"
+>
+
+    <div class="max-w-6xl mx-auto">
+
+        <!-- TITLE -->
+        <div class="mb-10">
+
+            <h2 class="text-3xl font-black mb-3">
+                Contact
+            </h2>
+
+            <p class="text-gray-400 text-sm">
+                Let's connect and build something great.
+            </p>
+
+        </div>
+
+        <!-- CONTACT GRID -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <!-- LINKEDIN -->
+            <a
+                href="https://www.linkedin.com/in/mirparvin/"
+                target="_blank"
+                class="glass rounded-[24px] p-6 hover:-translate-y-1 transition duration-300 group"
+            >
+
+                <div class="flex items-center justify-between mb-6">
+
+                    <div class="w-12 h-12 rounded-2xl bg-cyan-400/10 flex items-center justify-center text-2xl">
+                        💼
+                    </div>
+
+                    <span class="text-cyan-400 text-sm opacity-0 group-hover:opacity-100 transition duration-300">
+                        ↗
+                    </span>
+
+                </div>
+
+                <h3 class="text-lg font-bold mb-2">
+                    LinkedIn
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    Professional profile & networking
+                </p>
+
+            </a>
+
+            <!-- GITHUB -->
+            <a
+                href="https://github.com/Miriyev41"
+                target="_blank"
+                class="glass rounded-[24px] p-6 hover:-translate-y-1 transition duration-300 group"
+            >
+
+                <div class="flex items-center justify-between mb-6">
+
+                    <div class="w-12 h-12 rounded-2xl bg-cyan-400/10 flex items-center justify-center text-2xl">
+                        💻
+                    </div>
+
+                    <span class="text-cyan-400 text-sm opacity-0 group-hover:opacity-100 transition duration-300">
+                        ↗
+                    </span>
+
+                </div>
+
+                <h3 class="text-lg font-bold mb-2">
+                    GitHub
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    Projects & source code
+                </p>
+
+            </a>
+
+            <!-- EMAIL -->
+            <a
+                href="mailto:miriyevmirparvin@gmail.com"
+                class="glass rounded-[24px] p-6 hover:-translate-y-1 transition duration-300 group"
+            >
+
+                <div class="flex items-center justify-between mb-6">
+
+                    <div class="w-12 h-12 rounded-2xl bg-cyan-400/10 flex items-center justify-center text-2xl">
+                        ✉️
+                    </div>
+
+                    <span class="text-cyan-400 text-sm opacity-0 group-hover:opacity-100 transition duration-300">
+                        ↗
+                    </span>
+
+                </div>
+
+                <h3 class="text-lg font-bold mb-2">
+                    Gmail
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    miriyevmirparvin@gmail.com
+                </p>
+
+            </a>
+
+            <!-- PHONE -->
+            <a
+                href="tel:+796343241"
+                class="glass rounded-[24px] p-6 hover:-translate-y-1 transition duration-300 group"
+            >
+
+                <div class="flex items-center justify-between mb-6">
+
+                    <div class="w-12 h-12 rounded-2xl bg-cyan-400/10 flex items-center justify-center text-2xl">
+                        📱
+                    </div>
+
+                    <span class="text-cyan-400 text-sm opacity-0 group-hover:opacity-100 transition duration-300">
+                        ↗
+                    </span>
+
+                </div>
+
+                <h3 class="text-lg font-bold mb-2">
+                    Phone
+                </h3>
+
+                <p class="text-gray-400 text-sm">
+                    +796 343 241
+                </p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/10 py-6 text-center text-sm text-gray-400">
+
+    © 2026 Mirparvin Miriyev — Cloud Engineer
+
+</footer>
+<script>
+
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+
+        mobileMenu.classList.toggle('hidden');
+
+    });
+
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+    AOS.init({
+        duration: 900,
+        once: true
+    });
+
+</script>
+</body>
+</html>

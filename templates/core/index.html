@@ -21,10 +21,12 @@
             overflow-x: hidden;
         }
 
-        .gradient-text{
-            background: linear-gradient(to right,#38bdf8,#06b6d4);
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #06b6d4);
             -webkit-background-clip: text;
+            background-clip: text;        /* Standard property for browser compatibility */
             -webkit-text-fill-color: transparent;
+            color: transparent;           /* Standard property acting as the fill fallback */
         }
 
         .glass{
@@ -296,9 +298,7 @@
                 About Me
             </h2>
 
-            <p class="text-gray-400 text-sm">
-                Cloud & DevOps Engineer focused on scalable infrastructure and backend systems.
-            </p>
+
 
         </div>
 

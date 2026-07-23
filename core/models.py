@@ -30,3 +30,12 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+    
+
+class PersonalInfo(models.Model):
+    name = models.CharField(max_length=100)
+    # Add this line for the CV upload:
+    cv_file = models.FileField(upload_to='cvs/', blank=True, null=True)
+
+    def __str__(self):
+        return self.name
